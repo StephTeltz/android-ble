@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">android-ble-5</string>
+    <!-- Activity titles (displayed in toolbar) -->
+    <string name="app_name">android-drawer-layout</string>
+    <string name="activity_name_base">Base Activity</string>
+    <string name="activity_name_main">Main Activity</string>
+    <!-- Other titles -->
+    <string name="scan_title">Scan results</string>
+    <!-- Navigation drawer menu items -->
+    <string name="list_item_1">List Item 1</string>
+    <string name="list_item_2">List Item 2</string>
+    <string name="list_item_3">List Item 3</string>
+    <string name="list_item_4">List Item 4</string>
+    <string name="list_item_5">List Item 5</string>
+    <!-- Some messages -->
+    <string name="default_message">Add your own Activity here. It will nest within the FrameLayout in the base class.</string>
+    <string name="scan_message">BLE scanner class.</string>
+    <!-- TODO remove test strings for ArrayList -->
+    <string-array name="heroes">
+        <item>Batman</item>
+        <item>Superman</item>
+    </string-array>
 </resources>

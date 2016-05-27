@@ -4,28 +4,28 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="83072971379871" >
+    timestamp="92924980935312" >
 
     <task
         name="javac"
-        duration="507" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="321" />
+        duration="0" />
     <task
         name="verifier"
-        duration="186" />
+        duration="0" />
 
     <artifact
-        location="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble-5\app\build\outputs\apk\app-debug.apk"
+        location="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="83072971379871" >
+    <build timestamp="92924980935312" >
         <artifact
-            location="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble-5\app\build\outputs\apk\app-debug.apk"
+            location="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
 

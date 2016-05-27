@@ -2,60 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble-5\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="acd235278d95c1c45e0dda240e1e4afcc3179802">
-        <dex dex="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble-5\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_efbb3d5da6e3970e102f5e651ec3b07a0cb2d58c\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble-5\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble-5\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_34f1ab9b87bc3203d5fe5929e86e17e846c9f30e\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble-5\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble-5\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_bcb6e6eefaef403b344b911110574599d918baf4\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble-5\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble-5\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_b91cea4ba43fd8190bb67d518619751219a547a8\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble-5\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble-5\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_6dd1281e6538f9b09f3e325d770f2a140a1f895d\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble-5\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="85b2e64f833562fb627bcfae05e114c6365ddca2">
-        <dex dex="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble-5\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_5a8327adcf01cff10f5310181107790a2c2c9c5d\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\brlstelt\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble-5\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_d3fd4b6b49d49cce6003c39a33f577160628e99f\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble-5\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble-5\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_87632e6e0276805e8dee14e0553fb5183e89658f\classes.dex" />
+        sha1="81acc70aa0b988793c324d31610d1d9c23fe9eeb">
+        <dex dex="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_09445e6b030c147572c9dc33289d333a12d36f24\classes.dex" />
     </item>
 
 </items>

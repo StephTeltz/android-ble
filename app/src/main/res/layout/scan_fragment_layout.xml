@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- id must = @android:id/list for use with Fragment -->
+    <ListView
+    android:id="@android:id/list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></ListView>
+
+    <!-- id must = @android:id/empty for use with Fragment -->
+    <!-- displays when no list items are available -->
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+</RelativeLayout>
