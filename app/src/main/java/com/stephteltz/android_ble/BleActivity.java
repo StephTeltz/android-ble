@@ -1,3 +1,7 @@
+/* TODO Note: this class will not have a ui.
+ScanFragment (and any other fragments req'g BLE functionality )will extend it and provide the ui elements.
+ */
+
 package com.stephteltz.android_ble;
 
 import android.Manifest;
@@ -21,7 +25,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class BleActivity extends AppCompatActivity {
+public class BleActivity {
 
     private final String TAG = "ScanActivity";
     private static final long SCAN_PERIOD = 10000; // BLE scan timeout = 10 seconds

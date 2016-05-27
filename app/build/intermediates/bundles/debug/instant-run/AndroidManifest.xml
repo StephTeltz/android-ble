@@ -35,18 +35,14 @@
 
         <!-- Main Activity -->
         <activity android:name="com.stephteltz.android_ble.MainActivity" >
-        </activity>
-        <!-- Base Activity: used only to normalize UI across activities by extension -->
-        <!-- Extend your activities with this to normalize UI -->
-        <activity android:name="com.stephteltz.android_ble.BaseActivity" />
-        <activity android:name="com.stephteltz.android_ble.ScanActivity" />
-        <activity android:name="com.stephteltz.android_ble.BleActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.stephteltz.android_ble.ScanActivity" />
+        <activity android:name="com.stephteltz.android_ble.BleActivity" />
     </application>
 
 </manifest>

@@ -1,3 +1,7 @@
+/**
+ * TODO Note: this class will have ui only, functionality will br provided by BleActivity.class
+ */
+
 package com.stephteltz.android_ble;
 
 import android.app.ListFragment;
@@ -12,18 +16,18 @@ import android.widget.Toast;
 /**
  * Created by brlstelt on 2016-05-27.
  */
-public class ScanFragment extends ListFragment {
+public class ScanFragment extends ListFragment implements BleInterface {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.scan_fragment_layout, container, false);
     }
 
+    /* TODO remove dummy array */
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(getActivity(), R.array.heroes, android.R.layout.simple_list_item_1);
+        ArrayAdapter adapter = null;
         setListAdapter(adapter);
-        //getListView().setOnClickListener(this);
     }
 
     @Override

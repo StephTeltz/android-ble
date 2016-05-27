@@ -26,15 +26,13 @@
         android:theme="@style/AppTheme">
         <!-- Main Activity -->
         <activity android:name=".MainActivity">
-        </activity>
-        <!-- Base Activity: used only to normalize UI across activities by extension -->
-        <!-- Extend your activities with this to normalize UI -->
-        <activity android:name=".BaseActivity" />
-        <activity android:name=".ScanActivity" />
-        <activity android:name=".BleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ScanActivity" />
+        <activity android:name=".BleActivity" />
+
     </application>
 </manifest>
