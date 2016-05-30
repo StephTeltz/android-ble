@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -19,6 +20,14 @@ import android.widget.Toast;
  */
 class ScanFragment extends ListFragment {
     public final String TAG = "ScanFragment";
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        BleWrapper bleWrapper = new BleWrapper();
+        /* TODO remove debug only */
+        Toast.makeText(this.getContext(), bleWrapper.toString(), Toast.LENGTH_SHORT).show();
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -31,10 +40,5 @@ class ScanFragment extends ListFragment {
         super.onActivityCreated(savedInstanceState);
         ArrayAdapter adapter = null;
         setListAdapter(adapter);
-    }
-
-    @Override
-    public void onListItemClick(ListView l, View v, int position, long id) {
-        Toast.makeText(getActivity(), "Item " + position, Toast.LENGTH_SHORT).show();
     }
 }

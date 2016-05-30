@@ -4,7 +4,7 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="361986620593771" >
+    timestamp="366499674332025" >
 
     <task
         name="javac"
@@ -14,24 +14,29 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="173" />
+        duration="0" />
     <task
         name="verifier"
-        duration="18" />
+        duration="0" />
 
     <artifact
-        location="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
-        type="DEX" />
+        location="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\intermediates\res\resources-debug.ap_"
+        type="RESOURCES" />
 
     <build timestamp="360531610639742" >
         <artifact
             location="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="361986620593771" >
+    <build timestamp="366401188708422" >
         <artifact
             location="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
             type="DEX" />
+    </build>
+    <build timestamp="366499674332025" >
+        <artifact
+            location="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\intermediates\res\resources-debug.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

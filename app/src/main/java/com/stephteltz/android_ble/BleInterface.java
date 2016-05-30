@@ -15,11 +15,7 @@ interface BleInterface {
 
     /* Validation methods */
     public boolean hasHardware();
-    public boolean hasPermissions();
     public boolean btEnabled();
-
-    /* Initialization methods*/
-    public void btInit();
 
     /* Connectivity methods */
     public void scan(boolean enable);
