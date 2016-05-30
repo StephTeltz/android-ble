@@ -4,40 +4,31 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="98180037599306"
-    verifier="FIELD_REMOVED" >
+    timestamp="361986620593771" >
 
     <task
         name="javac"
-        duration="557" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="76" />
+        duration="173" />
     <task
         name="verifier"
-        duration="13" />
+        duration="18" />
 
-    <artifact
-        location="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\intermediates\res\resources-debug.ap_"
-        type="RESOURCES" />
     <artifact
         location="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
         type="DEX" />
 
-    <build timestamp="96795225397432" >
+    <build timestamp="360531610639742" >
         <artifact
             location="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build
-        timestamp="98180037599306"
-        verifier="FIELD_REMOVED" >
-        <artifact
-            location="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
+    <build timestamp="361986620593771" >
         <artifact
             location="C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
             type="DEX" />

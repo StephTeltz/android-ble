@@ -6,8 +6,10 @@ import android.bluetooth.le.BluetoothLeScanner;
 /**
  * Created by brlstelt on 2016-05-27.
  */
-public interface BleInterface {
+interface BleInterface {
 /* TODO implement a generic ble data passing interface for cross-communication between ble activities and their fragments */
+    public final String TAG = "BleInterface";
+
     public BluetoothAdapter btAdapter = null;
     public BluetoothLeScanner btScanner = null;
 
@@ -20,7 +22,7 @@ public interface BleInterface {
     public void btInit();
 
     /* Connectivity methods */
-    public void scan();
+    public void scan(boolean enable);
 
     /* TODO etc... */
 }
