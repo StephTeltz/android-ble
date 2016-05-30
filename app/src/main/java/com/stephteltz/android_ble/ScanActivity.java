@@ -32,11 +32,11 @@ public class ScanActivity extends AppCompatActivity implements BleInterface {
     /*
     // Called only once when the app launches, it will never be cycled back to
     onCreate() {
-        /* Initialize reusable BT elements */
+        /* Initialize reusable BT elements
         BluetoothAdapter btAdapter = new BluetoothAdapter();
         BluetoothLeScanner btScanner = new BluetoothLeScanner();
 
-        /* Validate BT on device */
+        /* Validate BT on device
         // Does it support BT?                          Hardware check.
         // Does it support BTLE?                        Hardware check.
         // Does it have a valid adapter and scanner?    Software check.
@@ -84,16 +84,60 @@ public class ScanActivity extends AppCompatActivity implements BleInterface {
     onDestroy () {
         // stop scanning and destroy any memory using bt features
     }
-
     */
 
+
+    /**
+     * TODO LIFECYCLE METHODS
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan);
 
-        btInit();
+        /* Check if device is BLE enabled and initialize BLE elements */
+        if (hasHardware() && hasPermissions()) {
+            btInit();
+        } else {  // attempt to resolve the requirements and if not possible exit the app gracefully
+        }
+
+        /* Check that BLE was initialized properly */
+        if (btEnabled()) {
+            // Continue
+        } else {
+            // Request user to enable BT
+            // Exit gracefully if error
+        }
     }
+
+    @Override
+    protected void onStart() {}
+
+    @Override
+    protected void onResume() {}
+
+    @Override
+    protected void onRestart() {}
+
+    @Override
+    protected void onPause() {}
+
+    @Override
+    protected void onStop() {}
+
+    @Override
+    protected void onDestroy() {}
+
+    /**
+     * BLE INTERFACE METHODS
+     */
+    @Override
+    protected boolean hasHardware() {
+        // Check hardware requirements
+        }
+
+    @Override
+    protected boolean hasPermissions() {}
 
     @Override
     protected void btInit() {
@@ -114,5 +158,13 @@ public class ScanActivity extends AppCompatActivity implements BleInterface {
                 startActivityForResult(intent, 1);
             }
         }
+    }
+
+    @Override
+    protected boolean btEnabled() {}
+
+    @Override
+    public boolean scan() {
+        Log.d("ScanActivity", "scan(true)");
     }
 }

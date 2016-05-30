@@ -6,14 +6,21 @@ import android.bluetooth.le.BluetoothLeScanner;
 /**
  * Created by brlstelt on 2016-05-27.
  */
-protected interface BleInterface {
+public interface BleInterface {
 /* TODO implement a generic ble data passing interface for cross-communication between ble activities and their fragments */
-    protected BluetoothAdapter btAdapter = null;
-    protected BluetoothLeScanner btScanner = null;
+    public BluetoothAdapter btAdapter = null;
+    public BluetoothLeScanner btScanner = null;
 
-    protected void btInit() {};
+    /* Validation methods */
+    public boolean hasHardware();
+    public boolean hasPermissions();
+    public boolean btEnabled();
 
-    protected void scan() {};
+    /* Initialization methods*/
+    public void btInit();
+
+    /* Connectivity methods */
+    public void scan();
 
     /* TODO etc... */
 }

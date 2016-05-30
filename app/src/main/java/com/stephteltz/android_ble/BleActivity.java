@@ -25,7 +25,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class BleActivity {
+public class BleActivity extends AppCompatActivity {
 
     private final String TAG = "ScanActivity";
     private static final long SCAN_PERIOD = 10000; // BLE scan timeout = 10 seconds
@@ -45,7 +45,7 @@ public class BleActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ble);
+        super.setContentView(R.layout.activity_main);
 
         checkPermissions();
         init();
@@ -88,11 +88,11 @@ public class BleActivity {
         // Initialize UI elements
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        spinner = (ProgressBar) findViewById(R.id.spinner);
-        spinner.setVisibility(4); // By default spinner is invisible
-        textView = (TextView) findViewById(R.id.text_view);
-        textView.setText("Click 'Start Scan' to search for devices.");
-        buttonScanStart = (Button) findViewById(R.id.bt_scan_start);
+        //spinner = (ProgressBar) findViewById(R.id.spinner);
+        //spinner.setVisibility(4); // By default spinner is invisible
+        //textView = (//textView) findViewById(R.id.text_view);
+        //textView.setText("Click 'Start Scan' to search for devices.");
+        //buttonScanStart = (Button) findViewById(R.id.bt_scan_start);
 
         // Set UI behaviour
         buttonScanStart.setOnClickListener(new View.OnClickListener() {
@@ -102,13 +102,13 @@ public class BleActivity {
                 if (!mScanning) { // if not already scanning (mScanning = false), start scanning
                     scan(true);
                     buttonScanStart.setText("Stop scan");
-                    spinner.setVisibility(0); // Spinner is visible while scanning
+                    //spinner.setVisibility(0); // Spinner is visible while scanning
 
                 } else if (mScanning) { // if already scanning (mScanning = true), stop scanning
                     scan(false);
                     buttonScanStart.setText("Start scan");
-                    //textView.setText("Click 'Start Scan' to search for devices.");
-                    spinner.setVisibility(4); // Spinner is invisible when not scanning
+                    ////textView.setText("Click 'Start Scan' to search for devices.");
+                    //spinner.setVisibility(4); // Spinner is invisible when not scanning
                 }
 
                 Log.d(TAG, "Test");
@@ -120,7 +120,7 @@ public class BleActivity {
         mScanCallback = new ScanCallback() {
             @Override
             public void onScanResult(int callbackType, ScanResult result) {
-                textView.setText(result.toString());
+                //textView.setText(result.toString());
             }
         };
 
