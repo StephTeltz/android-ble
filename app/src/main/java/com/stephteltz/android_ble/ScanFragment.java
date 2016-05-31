@@ -5,7 +5,9 @@
 package com.stephteltz.android_ble;
 
 import android.app.ListFragment;
+import android.bluetooth.le.ScanResult;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +16,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
 
 /**
  * Created by brlstelt on 2016-05-27.
@@ -24,9 +28,19 @@ class ScanFragment extends ListFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        BleWrapper bleWrapper = new BleWrapper();
+
+        BleWrapper bleWrapper = new BleWrapper(this.getContext());
+        bleWrapper.initialize();
+        bleWrapper.scan(true);
+
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(getActivity(), bleWrapper.getDataArray(), android.R.layout.simple_list_item_1);
+        setListAdapter(adapter);
+
+        /* TODO DEBUG REMOVE WHEN RESOLVED
+        bleWrapper.hasPermissions(); */
+
         /* TODO remove debug only */
-        Toast.makeText(this.getContext(), bleWrapper.toString(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this.getContext(), Boolean.toString(bleWrapper.initialize()), Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -38,7 +52,5 @@ class ScanFragment extends ListFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        ArrayAdapter adapter = null;
-        setListAdapter(adapter);
     }
 }

@@ -1,16 +1,23 @@
 package com.stephteltz.android_ble;
 
+import android.Manifest;
 import android.app.Fragment;
+import android.content.DialogInterface;
+import android.content.pm.PackageManager;
+import android.content.res.Resources;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 class MainActivity extends AppCompatActivity {
     public String TAG = "MainActivity";
+    private final int PERMISSION_REQUEST_COARSE_LOCATION = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:2:1-38:12
+ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:2:1-35:12
 	xmlns:android
 		ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:2:11-69
 	package
@@ -21,12 +21,8 @@ uses-permission#android.permission.BLUETOOTH_ADMIN
 ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:19:5-74
 	android:name
 		ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:19:22-71
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:20:5-81
-	android:name
-		ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:20:22-78
 application
-ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:21:5-37:19
+ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:21:5-34:19
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
@@ -54,7 +50,7 @@ MERGED from [com.android.support:support-v4:23.4.0] C:\Users\brlstelt\Dropbox\An
 	android:icon
 		ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:23:9-43
 	android:theme
-		ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:26:9-40
+		ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:26:9-59
 activity#com.stephteltz.android_ble.MainActivity
 ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:28:9-33:20
 	android:name
@@ -69,14 +65,6 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
 		ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:31:27-74
-activity#com.stephteltz.android_ble.ScanActivity
-ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:34:9-50
-	android:name
-		ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:34:19-47
-activity#com.stephteltz.android_ble.BleActivity
-ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:35:9-49
-	android:name
-		ADDED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml:35:19-46
 uses-sdk
 INJECTED from C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\brlstelt\Dropbox\AndroidStudioProjects\android-ble\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78
